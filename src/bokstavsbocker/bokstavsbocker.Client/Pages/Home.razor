@@ -1,0 +1,51 @@
+﻿@page "/"
+
+<PageTitle>Bokstavsböcker</PageTitle>
+<p>Böcker</p>
+        @foreach(var v in @letters){
+    <div class="container">
+        <div class="row justify-content-md-center">
+            @* <div class="col-md-auto textdiv">
+                @v
+            </div> *@
+            <div class="card col-md-auto mycard">
+                <div class="card-body textdiv">@v</div>
+            </div>
+
+        </div>
+    </div>
+        }
+          
+        
+       
+@code{
+    string[] letters = ["A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+        "Å",
+        "Ä",
+        "Ö"];
+}
